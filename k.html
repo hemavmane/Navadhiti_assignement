@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/0735ddbc6e.js"
+    crossorigin="anonymous"></script>
+    <style>
+       /* 
+       #location{
+        display: none;
+       }
+       @media only screen and (max-width:375px){
+        #location{
+            display: flex;
+        }
+        #envelop{
+            display: none;
+        }
+       } */
+       .flex{
+        display: flex;
+       }
+       .flex{
+        display: none;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="flex_container flex">
+        <ul class="responsive" >
+          <a href="#" class="a1">Our Capabilities</a>
+          <a href="#">Customer Engagements</a>
+          <a href="#">Careers</a>
+          <a href="#">About us</a>
+          <button class="btn_lets">Lets talk</button>
+        </ul>
+
+      </div>
+      <i class="fa-solid fa-bars" ></i>
+    <script>
+       
+
+const btn = document.querySelector('.fa-bars')
+const ul = document.querySelector('.flex_container')
+
+btn.addEventListener('click',()=>{
+      ul.classList.toggle('flex')
+      console.log('k')
+})
+
+
+    </script>
+</body>
+</html>

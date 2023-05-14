@@ -9,19 +9,17 @@ body {
   height: auto;
   position: relative;
 }
-.abottom{
- margin-left: 45%;
-
+.abottom {
+  margin-left: 45%;
 }
-.bottom{
+.bottom {
   border-left: 2px solid rgb(171, 230, 62);
   margin: 12px;
-
 }
 .nav_bar {
   display: flex;
   width: 100%;
-  height:12vh ;
+  height: 12vh;
   flex-direction: row;
   justify-content: space-around;
   background-color: hsl(216, 24%, 96%);
@@ -33,14 +31,14 @@ body {
   padding: 0%;
 }
 
-.img1{
+.img1 {
   width: 60px;
   height: 60px;
 }
 .img2 {
   width: 50%;
   height: 65vh;
-  margin:69px 160px 60px 100px;
+  margin: 69px 160px 60px 100px;
 }
 a {
   text-decoration: none;
@@ -63,7 +61,9 @@ nav ul {
   justify-content: space-between;
 }
 
-.a1,.li1,.custmer_col {
+.a1,
+.li1,
+.custmer_col {
   color: rgb(155, 202, 67);
 }
 
@@ -92,23 +92,27 @@ nav ul {
   background-color: rgb(236, 239, 246);
   text-align: center;
 }
-.center,.custmer_size{
+.center,
+.custmer_size {
   font-size: 35px;
 }
 
-.card_container3{
+.mobile_view_container,
+.mobile_view_kk {
+  display: none;
+}
+
+.card_container3 {
   margin: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.card_container4{
+.card_container4 {
   width: 90%;
-  margin:15px;
+  margin: 15px;
   height: 45vh;
-  /* border: 1px solid red; */
-  position:relative;
+  position: relative;
 }
-
 
 .card1 {
   width: 100%;
@@ -121,39 +125,38 @@ nav ul {
   z-index: 1;
   border: none;
 }
-.product_name{
+.product_name {
   font-size: 20px;
   margin: 15px;
 }
-.caimg{
+.caimg {
   width: 100px;
   height: 100px;
   margin: 10px;
 }
 
-.tringle
-{
+.tringle {
   width: 0%;
   height: 0%;
   border-bottom: 30px solid transparent;
   border-right: 30px solid rgb(173, 204, 100);
 }
 
-.tringle{
+.tringle {
   position: relative;
   top: 0%;
-  left:0%;
+  left: 0%;
 }
 .cover1 {
-  width: 91.8%;
+  width: 92.4%;
   height: 92px;
   background-color: rgb(255, 255, 218);
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   box-shadow: 2px 4px 2px;
   position: absolute;
-  top: 62.7%;
-  left:8.2%;
+  top: 57.2%;
+  left: 7.6%;
   border: none;
 }
 
@@ -162,14 +165,15 @@ nav ul {
   box-shadow: 7px 7px 7px rgb(159, 161, 165);
 }
 
-.logo_container1,.logo_container2{
-  text-align:center;
+.logo_container1,
+.logo_container2 {
+  text-align: center;
   width: 90%;
   height: 93vh;
 }
 
-.logo_container2{
-  text-align:center;
+.logo_container2 {
+  text-align: center;
   width: 95%;
   height: 112vh;
   margin-top: 80px;
@@ -178,15 +182,16 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin:40px;
+  margin: 40px;
 }
 
-.img_size,.foter_img{
+.img_size,
+.foter_img {
   width: 180px;
   height: 70px;
   margin: 20px;
 }
-.img_size1{
+.img_size1 {
   width: 230px;
   height: 70px;
   margin: 20px;
@@ -197,9 +202,8 @@ nav ul {
   background-color: rgb(236, 239, 246);
   position: absolute;
   left: 10%;
-
 }
-.fa-caret-up{
+.fa-caret-up {
   color: white;
 }
 .btn {
@@ -222,38 +226,193 @@ nav ul {
   width: 100%;
   height: 35vh;
   background-color: rgb(214, 213, 225);
-
 }
-
 
 .footer_1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
 .footer_3 {
-
   text-align: center;
-
 }
 
 .p_div {
   display: flex;
   align-items: center;
- }
- .hr{
-   width: 45%;
-   border: thin solid rgba(0, 0, 0, 0.12);
-   border-width: thin;
-   border-style: solid;
-   border-color: rgba(0, 0, 0, 0.12);
- }
+}
+.hr {
+  width: 45%;
+  border: thin solid rgba(0, 0, 0, 0.12);
+  border-width: thin;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.fa-bars {
+  font-size: 30px;
+  display: none;
+}
+
+/* Mobile view */
+
+@media only screen and (max-width: 375px) {
+  body {
+    width: 375px;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  .fa-bars {
+    font-size: 30px;
+    display: flex;
+    position: fixed;
+    top: 1%;
+    right: 40%;
+  }
+  .nav_bar {
+    display: none;
+  }
+  .mobile_view_container {
+    width: 375px;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    background-color: rgb(223, 223, 235);
+    z-index: 1;
+    position: fixed;
+    top: 0%;
+  }
+  .mobile_view1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 135px;
+    height: 300px;
+    border: none;
+    position: absolute;
+    top: 0.3%;
+    left: 20.6%;
+    background-color: #fcfcfa;
+  }
  
+  .btn_lets {
+    width: 80px;
+    height: 20px;
+    font-size: small;
+  }
 
+  .inner_container {
+    display: inline;
+    width: 375px;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .container1 {
+    margin: 0% !important;
 
+    width: 375px;
+    height: fit-content;
+    background-color: rgb(236, 239, 246);
+  }
+  .img2 {
+    width: 375px;
+    height: 350px;
+    margin: 0%;
+  }
+  .img1 {
+    width: 50px;
+    height: 50px;
+  }
+  .abottom,
+  .inner_container,
+  .img2 {
+    margin: 0%;
+  }
+  .abottom {
+    display: flex;
+  }
 
+  .card_container3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0%;
+  }
 
+  .cover1 {
+    width: 92.4%;
+    height: 95px;
+    background-color: rgb(255, 255, 218);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    box-shadow: 2px 4px 2px;
+    position: absolute;
+    top: 53.4%;
+    left: 7.6%;
+    border: none;
+  }
 
- 
+  .container2 {
+    height: fit-content;
+    background-image: url(https://www.navadhiti.com/static/maskCareers-366ada599b6cb17b2c126b22e2abc280.svg);
+    background-color: rgb(236, 239, 246);
+    text-align: center;
+  }
+
+  .devide{
+   position: absolute;
+   left: 0%;
+    width: 375px;
+    height: 40px;
+    background-color: rgb(236, 239, 246);
+    
+  }
+  .img_size {
+    width: 140px;
+    height: 30px;
+    margin: 5px;
+  }
+  .logo_container2 {
+    margin-top: 160px;
+  }
+  .logo_container1,
+  .logo_container2 {
+    width:375px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .logo1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hr {
+    width: 35%;
+    border: thin solid rgba(0, 0, 0, 0.12);
+    border-width: thin;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.12);
+  }
+  .top {
+    font-size: 30px;
+    margin-top:50px;
+  }
+  .footer_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:375px;
+    height: 35vh;
+    background-color: rgb(214, 213, 225);
+    overflow: hidden;
+  }
+ .abottom{
+    width: 375px;
+  overflow: hidden;
+  }
+}
